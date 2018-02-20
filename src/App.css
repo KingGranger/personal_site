@@ -1,0 +1,29 @@
+
+
+.App {
+  text-align: center;
+}
+
+.LitHop {
+  height: 250px;
+  background: url('./lithop_logo.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.Faukemon {
+  height: 250px;
+  background: url('./pokemon_img.jpeg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+
+.HatPics {
+  height: 250px;
+  background-color: green;
+}
