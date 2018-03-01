@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-const initialBackground = '';
+const initialBackground = 'lithop_logo.png';
 
 const BackgroundReducer = (state = initialBackground, action) => {
   switch (action.type) {
