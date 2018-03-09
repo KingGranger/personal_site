@@ -22,7 +22,6 @@ class App extends Component {
       <div className="App">
         <NavBar />
 
-
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/Bio' component={Bio}/>
