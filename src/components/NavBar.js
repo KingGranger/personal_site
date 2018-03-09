@@ -14,7 +14,7 @@ const NavBar = () => {
             <NavLink to='/Bio'>Bio</NavLink>
         </Menu.Item>
         <Menu.Item name="Projects">
-            <NavLink to='/Bio'>Projects</NavLink>
+            <NavLink to='/Projects'>Projects</NavLink>
         </Menu.Item>
       </Menu>
   )
