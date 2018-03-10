@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
 
   return (
+    <div className='NavBar'>
       <Menu >
         <Menu.Item name="Me">
             <NavLink to='/'>Me</NavLink>
@@ -17,6 +18,7 @@ const NavBar = () => {
             <NavLink to='/Projects'>Projects</NavLink>
         </Menu.Item>
       </Menu>
+    </div>
   )
 }
 
