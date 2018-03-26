@@ -9,7 +9,9 @@ class Faukemon extends Component {
     return (
 
         <div className='Faukemon'>
+          <div className='Technologies'>
 
+          </div>
         </div>
 
     )
