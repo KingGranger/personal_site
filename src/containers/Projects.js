@@ -19,6 +19,7 @@ class Project extends Component {
       <Carousel showIndicators={false}>
         <div>
           <LitHop />
+          
         </div>
         <div>
           <Faukemon />
