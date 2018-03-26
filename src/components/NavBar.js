@@ -7,7 +7,7 @@ const NavBar = () => {
 
   return (
     <div className='NavBar'>
-      <Menu >
+      <Menu fluid size='massive' inverted tabular>
         <Menu.Item name="Me">
             <NavLink to='/'>Me</NavLink>
         </Menu.Item>

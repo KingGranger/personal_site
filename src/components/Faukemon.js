@@ -7,9 +7,11 @@ class Faukemon extends Component {
   render(){
 
     return (
-      <div className='Faukemon'>
 
-      </div>
+        <div className='Faukemon'>
+
+        </div>
+
     )
   }
 }

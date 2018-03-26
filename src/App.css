@@ -1,19 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
-/*
+
 .LitHop {
   height: 250px;
-  background: url('./lithop_logo.png') no-repeat center center fixed;
+  margin: 10px;
+  border-radius: 25px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: left;
+  background: url('./img/lithop_logo.png') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
 }
-
 .Faukemon {
   height: 250px;
-  background: url('./pokemon_img.jpeg') no-repeat center center fixed;
+  background: url('./img/pokemon_img.jpeg') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -21,6 +30,7 @@
 }
 
 
+/*
 .HatPics {
   height: 250px;
   background-color: green;
@@ -29,38 +39,96 @@
 .Home {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: minmax(50px, auto);
-
+  position: relative;
  }
 
-.portrait{
-  grid-column: 2 / 5;
-  grid-row: 1/ 8;
-  background: url('./me.jpg') no-repeat center;
-  
+.HomePic  {
+  grid-column:  5/ 6;
+  grid-row: 1/ 2;
+  border-radius: 50%;
 }
 
 .LinkedInButton {
   grid-column: 2 / 3;
-  grid-row: 7 / 8;
+  grid-row: 5 / 6;
 }
 
 .GithubButton {
   grid-column: 3 / 4;
-  grid-row: 7 / 8;
+  grid-row: 5 / 6;
 }
 
 .TwitterButton {
   grid-column: 4 / 5;
-  grid-row: 7 / 8;
+  grid-row: 5 / 6;
 }
 
 body {
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-color: #5900b3;
 }
 
-.NavBar {
-  color: Black;
-  font-family: Arial, Helvetica, sans-serif
+.Occupation {
+  grid-column: 1/6;
+  grid-row: 1/2;
+  text-align: left;
+  margin: 30px;
+  color: white;
+  font-family: Apple Chancery, cursive;
+  font-size: 255%;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.Name {
+  grid-column: 1 / 6;
+  grid-row: 2 / 3;
+  color: white;
+  font-family: Apple Chancery, cursive;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.Motto {
+  grid-column: 1/6;
+  grid-row: 3/4;
+  text-align: center;
+  color: white;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  padding-top: 10px
+}
+
+.Bio {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.BioText {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: white;
+  border-radius: 25px;
+  flex:1;
+  padding: 5px;
+  margin: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px
+}
+
+.BioImage {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+. Tab {
+  background-color: #5900b3;
 }
