@@ -7,33 +7,41 @@ import HatPics from '../components/HatPics'
 import { Tab } from 'semantic-ui-react';
 import { Carousel } from 'react-responsive-carousel';
 
-const panes = [{menuItem: 'Lit Hop', render: () => <Tab.Pane className='Tab'><LitHop/></Tab.Pane>}]
-const the = document.getElementsByClassName("slides");
-
+const projects = [<LitHop/>, <Faukemon/>, <HatPics/>]
 class Project extends Component {
+  state = {
+    slideIndex: 0
+  }
+
+  slidechange = (n) => {
+    if(this.state.slideIndex === 0 && n === -1){
+      this.setState({slideIndex: projects.length - 1})
+    }
+    else if(this.state.slideIndex === projects.length - 1) {
+      this.setState({slideIndex: 0})
+    }
+    else{
+      this.setState({slideIndex: this.state.slideIndex + n})
+    }
+  }
+
+
 
 
   render(){
-    console.log('elements I want',the)
+    console.log('number:', this.state.slideIndex)
     return (
-      <Carousel showIndicators={false}>
-        <div>
-          <LitHop />
-          
-        </div>
-        <div>
-          <Faukemon />
-        </div>
-      </Carousel>
+      <div>
+        {projects[this.state.slideIndex]}
+        <button onClick={() => this.slidechange(-1)}>Previous</button>
+        <button onClick={() => this.slidechange(1)}> Next</button>
+      </div>
     )
   }
 };
 
 export default Project;
 
-// state = {
-//   slideIndex: 1
-// }
 //
 // componentDidMount(){
 //   this.showDivs(this.state.slideIndex)
