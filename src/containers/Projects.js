@@ -29,12 +29,13 @@ class Project extends Component {
 
 
   render(){
-    console.log('number:', this.state.slideIndex)
     return (
-      <div>
+      <div className='ProjectContainer'>
         {projects[this.state.slideIndex]}
-        <button onClick={() => this.slidechange(-1)}>Previous</button>
-        <button onClick={() => this.slidechange(1)}> Next</button>
+        <div className='Buttons'>
+          <button onClick={() => this.slidechange(-1)}>Previous</button>
+          <button onClick={() => this.slidechange(1)}> Next</button>
+        </div>
       </div>
     )
   }

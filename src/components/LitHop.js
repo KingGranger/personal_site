@@ -14,7 +14,7 @@ class LitHop extends Component {
   render(){
 
     return (
-        <div className='LitHop'>
+        <div className='ProjectLayout'>
           <div className='Technologies'>
             <h2 className='ProjectName'>Lit Hop</h2>
             <List>
@@ -49,9 +49,9 @@ class LitHop extends Component {
               </List.Item>
             </List>
           </div>
-          <div className='LitHopDemo'>
+          <div className='Demo'>
             <Embed icon='play' placeholder={LitHopLogo} url={LitHopDemo}/>
-
+            <p className='DemoText'>Click to play demo! Click <a href='https://github.com/KingGranger/lit_hop_client'>Here</a> for the front-end repo and <a href='https://github.com/KingGranger/lit_hop_server'>Here</a> for back-end repo</p>
           </div>
         </div>
 
